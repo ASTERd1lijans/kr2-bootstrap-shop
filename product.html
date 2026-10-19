@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BMW M8 Gran Coupe — ast3rr Auto | Bootstrap Shop</title>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+<body class="bg-light">
+  <!-- Единая навигация Bootstrap -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="index.html">ast3rr Auto</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#mainNavbar"
+        aria-controls="mainNavbar"
+        aria-expanded="false"
+        aria-label="Переключить навигацию"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Главная</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="catalog.html">Каталог</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="product.html">Товар</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="order.html">Заявка</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Дополнительно
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="catalog.html">Все товары</a></li>
+              <li><a class="dropdown-item" href="order.html">Оформить заявку</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="index.html#popular">Популярное</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Основной контент карточки товара -->
+  <main class="container my-5">
+    <!-- Хлебные крошки (Breadcrumb) -->
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+        <li class="breadcrumb-item"><a href="catalog.html">Каталог</a></li>
+        <li class="breadcrumb-item active" aria-current="page">BMW M8 Gran Coupe</li>
+      </ol>
+    </nav>
+
+    <!-- Верхний блок товара (сетка на 2 колонки) -->
+    <div class="row g-4 align-items-start">
+      <div class="col-12 col-lg-6">
+        <div class="card shadow-sm p-2 bg-white">
+          <img src="images/bmw-m8.jpg" class="img-fluid rounded" alt="BMW M8 Gran Coupe">
+        </div>
+      </div>
+      <div class="col-12 col-lg-6">
+        <div class="d-flex gap-2 mb-3">
+          <span class="badge bg-warning text-dark">Хит продаж</span>
+          <span class="badge bg-success">В наличии</span>
+          <span class="badge bg-secondary">Гарантия 3 года</span>
+        </div>
+        <h1 class="h2 fw-bold">BMW M8 Gran Coupe Competition</h1>
+        <p class="lead text-muted">
+          Высокотехнологичный четырёхдверный спорткар, сочетающий динамику гоночного болида и непревзойденный люксовый комфорт.
+        </p>
+        <p class="fs-2 fw-bold text-primary mb-3">16 500 000 руб.</p>
+
+        <div class="d-flex flex-wrap gap-2 mb-4">
+          <a class="btn btn-primary btn-lg" href="order.html">
+            Оформить заявку
+          </a>
+          <button
+            class="btn btn-outline-primary btn-lg"
+            type="button"
+            data-bs-toggle="modal"
+            data-bs-target="#orderModal"
+          >
+            Быстрый заказ
+          </button>
+          <a class="btn btn-outline-secondary btn-lg" href="catalog.html">
+            Назад в каталог
+          </a>
+        </div>
+
+        <div class="alert alert-warning" role="alert">
+          <strong>Внимание:</strong> Это учебная карточка товара. Данные и компоненты используются для демонстрации возможностей Bootstrap 5 в рамках Контрольной работы №2.
+        </div>
+      </div>
+    </div>
+
+    <!-- Таблица характеристик товара -->
+    <section class="mt-5">
+      <h2 class="h4 mb-3">Технические характеристики</h2>
+      <div class="table-responsive shadow-sm rounded">
+        <table class="table table-striped table-hover table-bordered align-middle mb-0">
+          <thead class="table-dark">
+            <tr>
+              <th scope="col" style="width: 35%;">Параметр</th>
+              <th scope="col">Значение</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Категория</th>
+              <td>Спортивные седаны / Gran Coupe</td>
+            </tr>
+            <tr>
+              <th scope="row">Двигатель</th>
+              <td>4.4 л V8 M TwinPower Turbo</td>
+            </tr>
+            <tr>
+              <th scope="row">Мощность</th>
+              <td>625 л.с. (750 Нм при 1800-5800 об/мин)</td>
+            </tr>
+            <tr>
+              <th scope="row">Разгон 0–100 км/ч</th>
+              <td>3.2 секунды</td>
+            </tr>
+            <tr>
+              <th scope="row">Трансмиссия</th>
+              <td>8-ступенчатая M Steptronic с функцией Drivelogic</td>
+            </tr>
+            <tr>
+              <th scope="row">Привод</th>
+              <td>Полный M xDrive с активным M-дифференциалом</td>
+            </tr>
+            <tr>
+              <th scope="row">Расход топлива (смешанный)</th>
+              <td>11.2 л / 100 км</td>
+            </tr>
+            <tr>
+              <th scope="row">Наличие в шоуруме</th>
+              <td><span class="badge bg-success">В наличии на складе в Москве</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Дополнительный компонент: Accordion для деталей комплектации -->
+    <section class="mt-5">
+      <h2 class="h4 mb-3">Опции и условия покупки</h2>
+      <div class="accordion shadow-sm" id="productDetailsAccordion">
+        <div class="accordion-item">
+          <h3 class="accordion-header" id="detailsHeadingOne">
+            <button
+              class="accordion-button"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#detailsCollapseOne"
+              aria-expanded="true"
+              aria-controls="detailsCollapseOne"
+            >
+              Комплектация Competition Package
+            </button>
+          </h3>
+          <div
+            id="detailsCollapseOne"
+            class="accordion-collapse collapse show"
+            aria-labelledby="detailsHeadingOne"
+            data-bs-parent="#productDetailsAccordion"
+          >
+            <div class="accordion-body">
+              В комплектацию входят: карбоно-керамическая тормозная система M Carbon, выхлопная система M Sport, 20-дюймовые кованые диски Star-spoke 813 M, аудиосистема Bowers & Wilkins Diamond Surround Sound, салон из кожи Merino.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h3 class="accordion-header" id="detailsHeadingTwo">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#detailsCollapseTwo"
+              aria-expanded="false"
+              aria-controls="detailsCollapseTwo"
+            >
+              Доставка и выдача автомобиля
+            </button>
+          </h3>
+          <div
+            id="detailsCollapseTwo"
+            class="accordion-collapse collapse"
+            aria-labelledby="detailsHeadingTwo"
+            data-bs-parent="#productDetailsAccordion"
+          >
+            <div class="accordion-body">
+              Выдача возможна в день оплаты в флагманском дилерском центре либо доставка специализированным закрытым эвакуатором в любой город РФ.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h3 class="accordion-header" id="detailsHeadingThree">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#detailsCollapseThree"
+              aria-expanded="false"
+              aria-controls="detailsCollapseThree"
+            >
+              Гарантийное и сервисное обслуживание
+            </button>
+          </h3>
+          <div
+            id="detailsCollapseThree"
+            class="accordion-collapse collapse"
+            aria-labelledby="detailsHeadingThree"
+            data-bs-parent="#productDetailsAccordion"
+          >
+            <div class="accordion-body">
+              Автомобиль обеспечивается заводской гарантией 3 года или 100 000 км пробега с круглосуточной программой поддержки на дорогах «M Assistance».
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Модальное окно быстрой заявки -->
+  <div
+    class="modal fade"
+    id="orderModal"
+    tabindex="-1"
+    aria-labelledby="orderModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title h5" id="orderModalLabel">
+            Заказ BMW M8 Gran Coupe
+          </h2>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Закрыть"
+          ></button>
+        </div>
+        <div class="modal-body">
+          <p class="text-muted small">
+            Заполните форму, и мы забронируем за вами данный автомобиль по специальной цене 16 500 000 руб.
+          </p>
+          <form id="productOrderForm">
+            <div class="mb-3">
+              <label for="modal-name" class="form-label">Имя *</label>
+              <input id="modal-name" type="text" class="form-control" placeholder="Иван" required>
+            </div>
+            <div class="mb-3">
+              <label for="modal-phone" class="form-label">Телефон *</label>
+              <div class="input-group">
+                <span class="input-group-text">+7</span>
+                <input id="modal-phone" type="tel" class="form-control" placeholder="(900) 000-00-00" required>
+              </div>
+            </div>
+            <div class="form-check mb-3">
+              <input id="modal-agree" class="form-check-input" type="checkbox" checked required>
+              <label class="form-check-label small" for="modal-agree">
+                Согласен на обработку персональных данных
+              </label>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+            Закрыть
+          </button>
+          <button type="submit" form="productOrderForm" class="btn btn-primary">
+            Подтвердить заказ
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Подвал страницы -->
+  <footer class="bg-dark text-white py-4 mt-5">
+    <div class="container">
+      <div class="row align-items-center g-3">
+        <div class="col-12 col-md-6">
+          <p class="mb-1 fw-bold">ast3rr Auto &copy; 2026. Контрольная работа №2.</p>
+          <p class="mb-0 text-secondary small">
+            Выполнил: Строков Андрей Игоревич (группа ЭФБО-03-25)
+          </p>
+        </div>
+        <div class="col-12 col-md-6 text-md-end">
+          <a class="text-light text-decoration-none me-3" href="index.html">Главная</a>
+          <a class="text-light text-decoration-none me-3" href="catalog.html">Каталог</a>
+          <a class="text-light text-decoration-none me-3" href="product.html">Товар</a>
+          <a class="text-light text-decoration-none" href="order.html">Заявка</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS Bundle -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js">
+  </script>
+</body>
+</html>
