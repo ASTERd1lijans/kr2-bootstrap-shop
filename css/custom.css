@@ -16,11 +16,20 @@ footer {
   min-height: 240px;
 }
 
+.placeholder-image {
+  min-height: 320px;
+}
+
 .card-img-top {
   height: 200px;
   object-fit: cover;
 }
 
-.placeholder-image {
-  min-height: 320px;
+/* Плавный hover-эффект для карточек */
+.card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
 }
